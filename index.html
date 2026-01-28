@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButDogeBot | Legal Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 { font-size: 2.8rem; margin-bottom: 10px; color: var(--accent); font-weight: 800; }
+        h2 { color: var(--accent); margin-top: 40px; border-bottom: 2px solid var(--border); padding-bottom: 10px; font-size: 1.8rem; }
+        h3 { color: var(--text); margin-top: 25px; font-size: 1.2rem; font-weight: 600; }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 20px;
+            z-index: 10;
+        }
+
+        .nav-links a {
+            background: var(--card);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 24px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        section {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            margin-bottom: 40px;
+            display: none;
+        }
+
+        section:target { display: block; animation: fadeIn 0.5s ease; }
+        #privacy:not(:target) ~ #tos { display: block; } 
+        #tos:target ~ #privacy { display: none; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; color: var(--text-dim); }
+        p { color: var(--text-dim); margin-bottom: 15px; }
+        strong { color: var(--text); }
+
+        .footer { text-align: center; color: var(--text-dim); font-size: 0.9rem; margin-top: 60px; padding-bottom: 40px; }
+        code { background: #0f172a; padding: 4px 8px; border-radius: 6px; font-family: monospace; color: var(--accent); }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            section { padding: 20px; }
+            .nav-links { flex-direction: column; align-items: stretch; }
+            .nav-links a { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>ButDogeBot</h1>
+        <p>Official Legal Center & User Agreement</p>
+    </header>
+
+    <div class="nav-links">
+        <a href="#tos">Terms of Service</a>
+        <a href="#privacy">Privacy Policy</a>
+    </div>
+
+    <section id="tos">
+        <h2>Terms of Service Agreement</h2>
+        <p>This Agreement is entered into between <strong>nanoave</strong> ("Bot Owner") and the user ("User") of the ButDogeBot Discord bot ("the Bot"). By using the Bot, the User agrees to be bound by these terms.</p>
+        
+        <h3>1. Use of the Bot</h3>
+        <p>The Bot Owner grants the User a non-exclusive, non-transferable, limited license to use the Bot for personal or non-commercial purposes.</p>
+
+        <h3>2. Prohibited Use</h3>
+        <p>The User may not use the Bot in any way that violates applicable laws or infringes upon the rights of any third party. Commercial use requires express written consent.</p>
+
+        <h3>3. Limitation of Liability</h3>
+        <p>The Bot Owner shall not be liable for any damages arising out of the use or inability to use the Bot, including loss of profits, data, or other intangible losses.</p>
+
+        <h3>4. Modifications to the Bot</h3>
+        <p>The Bot Owner may modify or discontinue the Bot at any time without notice. The User agrees that the Bot Owner is not liable for such modifications.</p>
+
+        <h3>5. Intellectual Property</h3>
+        <p>The Bot and all intellectual property rights remain the property of the Bot Owner. Users may not copy, modify, or distribute the Bot without consent.</p>
+
+        <h3>6. Indemnification</h3>
+        <p>The User agrees to indemnify and hold harmless the Bot Owner from any claims, damages, or expenses arising out of the User's use of the Bot.</p>
+
+        <h3>7. Termination</h3>
+        <p>This Agreement may be terminated by either party at any time. Upon termination, the User must cease all use of the Bot.</p>
+
+        <h3>8. Governing Law</h3>
+        <p>This Agreement is governed by the laws of <strong>Brazil</strong>. Users outside Brazil agree to resolve disputes through arbitration in Brazil.</p>
+
+        <h3>9. User Conduct and Bridge Usage</h3>
+        <p>Users may not use ButDogeBot to bypass bans, mutes, or restrictions on Discord or Bonk.io. Prohibited content (hate speech, illegal material, spam) will result in a permanent ban.</p>
+
+        <h3>10. Data Logging and Transparency</h3>
+        <p>The Bot may display public logs of messages relayed through the bridge. These logs contain public information (nicknames, message content, levels) and do not include sensitive data.</p>
+
+        <h3>11. Entire Agreement</h3>
+        <p>This constitutes the entire agreement between the parties and supersedes all prior agreements relating to the Bot.</p>
+
+        <h3>12. Public Interaction</h3>
+        <p>By using the Bot, you consent to having your Discord username and message content relayed to the Bonk.io chat and vice-versa.</p>
+
+        <h3>13. Spam & Raid Avoidance</h3>
+        <p>The Bot is restricted to one designated channel per server to prevent mass-messaging. It includes 4-layer moderation (Bonk.io host, message logging, Discord server moderation, and the Bot Owner).</p>
+
+        <h3>14. Age & Minor Safety</h3>
+        <p>Users must comply with Discord’s minimum age requirement. The Bot must not be used to facilitate interaction with underage users in violation of rules.</p>
+
+        <h3>15. No Anonymity Abuse</h3>
+        <p>The Bot is not designed for anonymity. Session identifiers, levels, and nicknames may be logged to prevent abuse and evasion of moderation.</p>
+
+        <h3>16. Abuse Reporting</h3>
+        <p>Users may report abusive behavior using public logs. The Bot Owner reserves the right to restrict access based on log evidence.</p>
+
+        <h3>17. Third-Party Platform Disclaimer</h3>
+        <p>The Bot Owner is not responsible for outages, rule changes, or moderation actions taken by third-party services like Discord or Bonk.io.</p>
+
+        <h3>18. Security & Abuse Prevention</h3>
+        <p>Technical safeguards are in place to prevent self-triggering loops, bot-to-bot interactions, and automated abuse.</p>
+        
+        <p style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 20px;">
+            <em>By using the Bot, the User acknowledges that they have read this Agreement and agree to its terms.</em>
+        </p>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p><strong>Effective Date:</strong> January 18, 2026<br>
+        <strong>Last Updated:</strong> January 28, 2026</p>
+
+        <h3>1. Information We Collect</h3>
+        <ul>
+            <li><strong>Discord Data:</strong> User ID, username, and message content sent through bridge channels.</li>
+            <li><strong>Third-Party Data (Bonk.io):</strong> Public nicknames, in-game levels, and session identifiers.</li>
+            <li><strong>Usage Data:</strong> Statistics regarding the frequency and duration of bot usage.</li>
+        </ul>
+
+        <h3>2. How We Use Your Information</h3>
+        <p>Data is used to facilitate the communication bridge, maintain public logs for transparency, and implement security measures against spam and raiding.</p>
+
+        <h3>3. Sharing Your Information</h3>
+        <p>We do not sell your data. Messages are shared publicly between Discord and Bonk.io as part of the core function. Disclosure may occur if required by legal process.</p>
+
+        <h3>4. Data Retention & Rights</h3>
+        <p>Information is kept as long as needed for service delivery. You may request data deletion at any time by contacting us.</p>
+
+        <h3>5. Compliance (LGPD)</h3>
+        <p>This policy aligns with the Brazilian <strong>General Data Protection Law (LGPD)</strong> and Discord's Developer Terms.</p>
+
+        <h3>Contact Us</h3>
+        <p>Questions or data requests? Reach out at:<br>
+        <code>butdogebotdevelopment@gmail.com</code></p>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 nanoave. All rights reserved.
+    </div>
+</div>
+
+<script>
+    if (!window.location.hash) {
+        window.location.hash = 'tos';
+    }
+</script>
+
+</body>
+</html>
